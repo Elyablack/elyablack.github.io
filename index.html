@@ -4,64 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elvira | DevOps / SRE</title>
-  <meta
-    name="description"
-    content="DevOps / SRE portfolio: observability, infrastructure automation, backup and recovery."
-  />
+  <meta name="description" content="DevOps / SRE portfolio: observability, infrastructure automation, backup and recovery." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#" class="brand">Elvira</a>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">DevOps / SRE / Infrastructure</p>
+      <h1>Elvira</h1>
+      <p class="lead">
+        I build observability platforms, automate infrastructure operations,
+        and design backup and recovery workflows.
+      </p>
+      <div class="actions">
+        <a href="#projects" class="button">View Projects</a>
+        <a href="assets/cv.pdf" class="button button-secondary">Download CV</a>
+      </div>
     </div>
   </header>
-
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">DevOps / SRE / Infrastructure</p>
-        <h1>Elvira</h1>
-        <p class="lead">
-          I build observability platforms, automate infrastructure operations,
-          and design backup and recovery workflows.
-        </p>
-
-        <div class="hero-tags">
-          <span>Linux</span>
-          <span>Docker</span>
-          <span>Ansible</span>
-          <span>Prometheus</span>
-          <span>Grafana</span>
-          <span>Loki</span>
-        </div>
-
-        <div class="actions">
-          <a href="#projects" class="button">View Projects</a>
-          <a href="assets/cv.pdf" class="button button-secondary">Download CV</a>
-          <a href="https://github.com/Elyablack" class="button button-secondary">GitHub</a>
-        </div>
-      </div>
-
-      <aside class="hero-card">
-        <h2>Focus</h2>
-        <ul>
-          <li>Observability platforms</li>
-          <li>Infrastructure automation</li>
-          <li>Backup and disaster recovery</li>
-          <li>Operational runbooks</li>
-          <li>CI/CD and reliability workflows</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
 
   <main>
     <section id="about" class="section">
@@ -75,89 +35,40 @@
       </div>
     </section>
 
-    <section id="highlights" class="section">
-      <div class="container">
-        <h2>Highlights</h2>
-        <div class="highlight-grid">
-          <article class="mini-card">
-            <span class="mini-label">Monitoring</span>
-            <h3>End-to-end observability</h3>
-            <p>Metrics, logs, alerting, dashboards, and runbooks in one stack.</p>
-          </article>
-
-          <article class="mini-card">
-            <span class="mini-label">Automation</span>
-            <h3>Infrastructure baseline</h3>
-            <p>Ansible playbooks for bootstrap, hardening, Docker baseline, and backup operations.</p>
-          </article>
-
-          <article class="mini-card">
-            <span class="mini-label">Reliability</span>
-            <h3>Backup and recovery</h3>
-            <p>Automated backups, checksum verification, offsite copies, and restore testing.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
 
-        <article class="project-card">
-          <div class="project-top">
-            <div>
-              <h3>Observability Stack</h3>
-              <p class="project-subtitle">Production-style monitoring platform</p>
-            </div>
-            <span class="status-chip">Active</span>
-          </div>
-
+        <article class="card">
+          <h3>Observability Stack</h3>
           <p>
             Production-style monitoring stack built with Prometheus, Grafana, Loki,
             Alertmanager, Telegram alerting, dashboards, and operational runbooks.
           </p>
-
-          <ul class="project-list">
-            <li>Prometheus alerting and Grafana dashboards</li>
-            <li>Loki + Promtail log pipeline</li>
-            <li>Telegram notifications via relay service</li>
-            <li>Operational runbooks for host, app, backup, and demo alerts</li>
-            <li>CI validation for monitoring configs</li>
+          <ul>
+            <li>metrics, logs, alerting, dashboards, and runbooks</li>
+            <li>Telegram notifications and demo alert flows</li>
+            <li>CI validation for monitoring configuration</li>
           </ul>
-
           <p><strong>Tech:</strong> Prometheus, Grafana, Loki, Alertmanager, Docker Compose, FastAPI, Caddy</p>
-
           <div class="links">
             <a href="https://github.com/Elyablack/monitoring-stack">GitHub</a>
             <a href="https://demo.142.93.143.228.nip.io/">Live Demo</a>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-top">
-            <div>
-              <h3>Infrastructure Automation</h3>
-              <p class="project-subtitle">Operational automation for the monitoring environment</p>
-            </div>
-            <span class="status-chip">Active</span>
-          </div>
-
+        <article class="card">
+          <h3>Infrastructure Automation</h3>
           <p>
             Ansible-based automation for baseline configuration, VPS backups,
             offsite replication, restore testing, and disaster recovery workflows.
           </p>
-
-          <ul class="project-list">
-            <li>Bootstrap playbooks for host baseline and hardening</li>
-            <li>Automated backup pipeline with offsite replication</li>
-            <li>Checksum verification and restore-safe workflow</li>
-            <li>Backup freshness metric exported to Prometheus</li>
-            <li>Operational documentation for recovery procedures</li>
+          <ul>
+            <li>bootstrap playbooks for system baseline and hardening</li>
+            <li>backup pipeline with checksum verification</li>
+            <li>offsite backup copies and restore testing</li>
           </ul>
-
           <p><strong>Tech:</strong> Ansible, Linux, Bash, SSH, rsync, node_exporter, Prometheus</p>
-
           <div class="links">
             <a href="https://github.com/Elyablack/infra">GitHub</a>
           </div>
@@ -168,41 +79,25 @@
     <section id="skills" class="section">
       <div class="container">
         <h2>Skills</h2>
-        <div class="skill-cloud">
-          <span>Linux</span>
-          <span>Docker</span>
-          <span>Docker Compose</span>
-          <span>Ansible</span>
-          <span>Prometheus</span>
-          <span>Grafana</span>
-          <span>Loki</span>
-          <span>Alertmanager</span>
-          <span>Bash</span>
-          <span>GitHub Actions</span>
-          <span>CI/CD</span>
-          <span>Backup & Recovery</span>
-          <span>Runbooks</span>
-        </div>
+        <p>
+          Linux, Docker, Docker Compose, Ansible, Prometheus, Grafana, Loki,
+          Alertmanager, Bash, GitHub Actions, CI/CD, backup and recovery, runbooks.
+        </p>
       </div>
     </section>
 
     <section id="certifications" class="section">
       <div class="container">
         <h2>Certifications</h2>
-        <div class="mini-card">
-          <h3>Linux Foundation Certification</h3>
-          <p>Planned.</p>
-        </div>
+        <p>Linux Foundation certification — planned.</p>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <div class="contact-card">
-          <p><strong>GitHub:</strong> <a href="https://github.com/Elyablack">github.com/Elyablack</a></p>
-          <p><strong>Projects:</strong> observability, infrastructure automation, backup and recovery</p>
-        </div>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Elyablack">github.com/Elyablack</a></p>
+        <p><strong>Email:</strong> add your email here</p>
       </div>
     </section>
   </main>
