@@ -6,7 +6,7 @@
   <title>Elvira | DevOps / SRE</title>
   <meta
     name="description"
-    content="DevOps / SRE portfolio: observability, infrastructure automation, backup and recovery."
+    content="DevOps / SRE portfolio: observability platforms, alert-driven control planes, infrastructure automation, and backup recovery."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,6 +16,7 @@
       <a href="#" class="brand">Elvira</a>
       <nav>
         <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
@@ -27,11 +28,12 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <p class="eyebrow">DevOps / SRE / Infrastructure</p>
+        <p class="eyebrow">DevOps / SRE / Reliability Engineering</p>
         <h1>Elvira</h1>
         <p class="lead">
-          I build observability platforms, automate infrastructure operations,
-          and design backup and recovery workflows.
+          I build observability platforms and alert-driven operational workflows:
+          from metrics, logs, and dashboards to decisions, queued tasks, action runs,
+          and remediation pipelines.
         </p>
 
         <div class="hero-tags">
@@ -41,12 +43,15 @@
           <span>Prometheus</span>
           <span>Grafana</span>
           <span>Loki</span>
+          <span>Alertmanager</span>
+          <span>FastAPI</span>
+          <span>SQLite</span>
         </div>
 
         <div class="actions">
           <a href="#projects" class="button">View Projects</a>
-          <a href="assets/cv.pdf" class="button button-secondary">Download CV</a>
           <a href="https://github.com/Elyablack" class="button button-secondary">GitHub</a>
+          <a href="https://demo.142.93.143.228.nip.io/" class="button button-secondary">Live Demo</a>
         </div>
       </div>
 
@@ -54,10 +59,11 @@
         <h2>Focus</h2>
         <ul>
           <li>Observability platforms</li>
+          <li>Alert-driven control planes</li>
           <li>Infrastructure automation</li>
           <li>Backup and disaster recovery</li>
           <li>Operational runbooks</li>
-          <li>CI/CD and reliability workflows</li>
+          <li>Reliability-focused tooling</li>
         </ul>
       </aside>
     </div>
@@ -69,8 +75,9 @@
         <h2>About</h2>
         <p>
           I focus on Linux infrastructure, observability, automation, and operational reliability.
-          My current work centers on monitoring systems, backup pipelines, disaster recovery,
-          and infrastructure automation.
+          My recent work is centered on building production-style monitoring surfaces,
+          alert-driven orchestration pipelines, backup workflows, and public-safe demo environments
+          that show how systems behave from signal generation to remediation.
         </p>
       </div>
     </section>
@@ -80,21 +87,27 @@
         <h2>Highlights</h2>
         <div class="highlight-grid">
           <article class="mini-card">
-            <span class="mini-label">Monitoring</span>
-            <h3>End-to-end observability</h3>
-            <p>Metrics, logs, alerting, dashboards, and runbooks in one stack.</p>
+            <span class="mini-label">Observability</span>
+            <h3>End-to-end monitoring stack</h3>
+            <p>
+              Metrics, logs, dashboards, alerts, live demo surfaces, and runbooks packaged as one usable platform.
+            </p>
           </article>
 
           <article class="mini-card">
-            <span class="mini-label">Automation</span>
-            <h3>Infrastructure baseline</h3>
-            <p>Ansible playbooks for bootstrap, hardening, Docker baseline, and backup operations.</p>
+            <span class="mini-label">Orchestration</span>
+            <h3>Alert to action pipeline</h3>
+            <p>
+              Decisions, queued tasks, action runs, cooldowns, chains, and remote remediation workflows.
+            </p>
           </article>
 
           <article class="mini-card">
             <span class="mini-label">Reliability</span>
-            <h3>Backup and recovery</h3>
-            <p>Automated backups, checksum verification, offsite copies, and restore testing.</p>
+            <h3>Backup and recovery workflows</h3>
+            <p>
+              Automated backups, verification, offsite replication, restore-safe procedures, and operational documentation.
+            </p>
           </article>
         </div>
       </div>
@@ -108,25 +121,26 @@
           <div class="project-top">
             <div>
               <h3>Observability Stack</h3>
-              <p class="project-subtitle">Production-style monitoring platform</p>
+              <p class="project-subtitle">Production-style monitoring platform with live demo surfaces</p>
             </div>
             <span class="status-chip">Active</span>
           </div>
 
           <p>
-            Production-style monitoring stack built with Prometheus, Grafana, Loki,
-            Alertmanager, Telegram alerting, dashboards, and operational runbooks.
+            Production-style observability platform built with Prometheus, Grafana, Loki,
+            Alertmanager, FastAPI, Telegram alerting, runbooks, and public-safe dashboard surfaces.
           </p>
 
           <ul class="project-list">
             <li>Prometheus alerting and Grafana dashboards</li>
             <li>Loki + Promtail log pipeline</li>
-            <li>Telegram notifications via relay service</li>
+            <li>Demo app for 5xx, latency, and alert-validation scenarios</li>
+            <li>Public-safe surfaces for demo, dashboards, and control-plane visibility</li>
             <li>Operational runbooks for host, app, backup, and demo alerts</li>
-            <li>CI validation for monitoring configs</li>
+            <li>CI validation for monitoring configs and rules</li>
           </ul>
 
-          <p><strong>Tech:</strong> Prometheus, Grafana, Loki, Alertmanager, Docker Compose, FastAPI, Caddy</p>
+          <p><strong>Tech:</strong> Prometheus, Grafana, Loki, Alertmanager, Docker Compose, FastAPI, Caddy, Telegram</p>
 
           <div class="links">
             <a href="https://github.com/Elyablack/monitoring-stack">GitHub</a>
@@ -137,23 +151,53 @@
         <article class="project-card">
           <div class="project-top">
             <div>
-              <h3>Infrastructure Automation</h3>
-              <p class="project-subtitle">Operational automation for the monitoring environment</p>
+              <h3>Control Plane</h3>
+              <p class="project-subtitle">Alert-driven orchestration engine for decisions, tasks, runs, and remediation</p>
             </div>
             <span class="status-chip">Active</span>
           </div>
 
           <p>
-            Ansible-based automation for baseline configuration, VPS backups,
-            offsite replication, restore testing, and disaster recovery workflows.
+            Event-driven control plane that receives alerts, evaluates policy, creates decisions,
+            queues tasks, executes actions and chains, and tracks operational outcomes through a read-only pipeline API.
           </p>
 
           <ul class="project-list">
-            <li>Bootstrap playbooks for host baseline and hardening</li>
-            <li>Automated backup pipeline with offsite replication</li>
-            <li>Checksum verification and restore-safe workflow</li>
-            <li>Backup freshness metric exported to Prometheus</li>
-            <li>Operational documentation for recovery procedures</li>
+            <li>Alert ingestion from Alertmanager</li>
+            <li>Rule-based decisions: ignore, execute, chain, cooldown</li>
+            <li>Queued task model with worker execution</li>
+            <li>SQLite-backed state for decisions, tasks, runs, locks, and cooldowns</li>
+            <li>Backup orchestration flow for stale or missing backups</li>
+            <li>Remote mac remediation workflow with dedicated worker agent</li>
+          </ul>
+
+          <p><strong>Tech:</strong> Python, FastAPI, SQLite, Prometheus, Alertmanager, Ansible, macOS, Telegram</p>
+
+          <div class="links">
+            <a href="https://github.com/Elyablack/control-plane">GitHub</a>
+            <a href="https://demo.142.93.143.228.nip.io/control-plane">Live View</a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-muted">
+          <div class="project-top">
+            <div>
+              <h3>Supporting Infrastructure Automation</h3>
+              <p class="project-subtitle">Bootstrap, backup, restore, and recovery automation for the environment</p>
+            </div>
+            <span class="status-chip status-chip-muted">Supporting Repo</span>
+          </div>
+
+          <p>
+            Supporting automation repository used for infrastructure baseline, backup execution,
+            offsite replication, restore-safe operations, and recovery procedures around the monitoring environment.
+          </p>
+
+          <ul class="project-list">
+            <li>Bootstrap and baseline automation for Linux hosts</li>
+            <li>Backup and offsite replication workflows</li>
+            <li>Checksum verification and restore testing</li>
+            <li>Prometheus-facing backup freshness metrics</li>
           </ul>
 
           <p><strong>Tech:</strong> Ansible, Linux, Bash, SSH, rsync, node_exporter, Prometheus</p>
@@ -177,11 +221,14 @@
           <span>Grafana</span>
           <span>Loki</span>
           <span>Alertmanager</span>
+          <span>FastAPI</span>
+          <span>SQLite</span>
           <span>Bash</span>
           <span>GitHub Actions</span>
           <span>CI/CD</span>
           <span>Backup & Recovery</span>
           <span>Runbooks</span>
+          <span>Operational Automation</span>
         </div>
       </div>
     </section>
@@ -201,7 +248,8 @@
         <h2>Contact</h2>
         <div class="contact-card">
           <p><strong>GitHub:</strong> <a href="https://github.com/Elyablack">github.com/Elyablack</a></p>
-          <p><strong>Projects:</strong> observability, infrastructure automation, backup and recovery</p>
+          <p><strong>Live Demo:</strong> <a href="https://demo.142.93.143.228.nip.io/">demo.142.93.143.228.nip.io</a></p>
+          <p><strong>Focus:</strong> observability, control planes, infrastructure automation, backup and recovery</p>
         </div>
       </div>
     </section>
