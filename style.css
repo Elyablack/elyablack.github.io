@@ -225,6 +225,271 @@ h2 {
   margin-bottom: 18px;
 }
 
+.project-card-muted {
+  opacity: 0.96;
+}
+
+.project-top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.project-subtitle {
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.status-chip {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(115, 208, 194, 0.14);
+  border: 1px solid rgba(115, 208, 194, 0.25);
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-chip-muted {
+  color: var(--muted);
+  background: rgba(170, 180, 208, 0.08);
+  border-color: rgba(170, 180, 208, 0.16);
+}
+
+.project-list {
+  margin: 14px 0 14px 0;
+  padding-left: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.links a {
+  font-weight: 700;
+}
+
+.contact-card {
+  padding: 20px;
+}
+
+@media (max-width: 860px) {
+  .hero-grid,
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    padding: 12px 0;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .project-top {
+    flex-direction: column;
+  }
+}a:hover {
+  color: var(--accent-2);
+}
+
+.container {
+  width: min(1040px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(14px);
+  background: rgba(11, 16, 32, 0.72);
+  border-bottom: 1px solid rgba(39, 49, 82, 0.7);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 68px;
+  gap: 16px;
+}
+
+.brand {
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.nav nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav nav a {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nav nav a:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 80px 0 44px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 0.9fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  line-height: 1.04;
+  margin: 0 0 16px;
+}
+
+.lead {
+  max-width: 760px;
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.hero-tags,
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-tags {
+  margin-bottom: 24px;
+}
+
+.hero-tags span,
+.skill-cloud span {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(24, 33, 66, 0.9);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #071018;
+  font-weight: 800;
+  box-shadow: var(--shadow);
+}
+
+.button:hover {
+  color: #071018;
+  background: var(--accent-2);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.button-secondary:hover {
+  color: var(--text);
+  background: rgba(24, 33, 66, 0.85);
+}
+
+.hero-card,
+.project-card,
+.mini-card,
+.contact-card {
+  background: linear-gradient(180deg, rgba(18, 25, 51, 0.96), rgba(15, 21, 43, 0.98));
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 22px;
+}
+
+.hero-card h2 {
+  margin-top: 0;
+}
+
+.hero-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.section {
+  padding: 26px 0;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.8rem;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.mini-card {
+  padding: 18px;
+}
+
+.mini-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-card {
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
 .project-top {
   display: flex;
   align-items: start;
