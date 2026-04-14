@@ -6,10 +6,11 @@
   <title>Elvira | DevOps / SRE</title>
   <meta
     name="description"
-    content="DevOps / SRE portfolio: observability platforms, alert-driven control planes, infrastructure automation, and backup recovery."
+    content="DevOps / SRE portfolio: observability platforms, alert-driven control planes, deterministic audits, AI ops reviews, infrastructure automation, and backup recovery."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav">
@@ -31,9 +32,9 @@
         <p class="eyebrow">DevOps / SRE / Reliability Engineering</p>
         <h1>Elvira</h1>
         <p class="lead">
-          I build observability platforms and alert-driven operational workflows:
-          from metrics, logs, and dashboards to decisions, queued tasks, action runs,
-          and remediation pipelines.
+          I build observability platforms, deterministic audit workflows, and alert-driven
+          operational control planes: from metrics, logs, dashboards, and alerts to decisions,
+          queued tasks, action runs, AI-assisted reviews, and remediation pipelines.
         </p>
 
         <div class="hero-tags">
@@ -46,6 +47,8 @@
           <span>Alertmanager</span>
           <span>FastAPI</span>
           <span>SQLite</span>
+          <span>macOS</span>
+          <span>OpenAI API</span>
         </div>
 
         <div class="actions">
@@ -61,6 +64,8 @@
         <ul>
           <li>Observability platforms</li>
           <li>Alert-driven control planes</li>
+          <li>Deterministic audit workflows</li>
+          <li>AI-assisted ops summaries</li>
           <li>Infrastructure automation</li>
           <li>Backup and disaster recovery</li>
           <li>Operational runbooks</li>
@@ -77,8 +82,9 @@
         <p>
           I focus on Linux infrastructure, observability, automation, and operational reliability.
           My recent work is centered on building production-style monitoring surfaces,
-          alert-driven orchestration pipelines, backup workflows, and public-safe demo environments
-          that show how systems behave from signal generation to remediation.
+          alert-driven orchestration pipelines, deterministic host and monitoring audits,
+          backup workflows, and public-safe demo environments that show how systems behave
+          from signal generation to remediation.
         </p>
       </div>
     </section>
@@ -104,10 +110,34 @@
           </article>
 
           <article class="mini-card">
+            <span class="mini-label">Audits</span>
+            <h3>Deterministic operational checks</h3>
+            <p>
+              Admin, VPS, monitoring stack, and Mac host audits with analyzer output and Prometheus metrics.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <span class="mini-label">AI Ops</span>
+            <h3>Bounded AI review layer</h3>
+            <p>
+              AI ops briefs and weekly reviews summarize audit results, recurring issues, noise, and next actions.
+            </p>
+          </article>
+
+          <article class="mini-card">
+            <span class="mini-label">Mac Agent</span>
+            <h3>Remote Mac health and remediation</h3>
+            <p>
+              Agent-published Mac snapshots, memory pressure tracking, launchd checks, and guarded remediation tasks.
+            </p>
+          </article>
+
+          <article class="mini-card">
             <span class="mini-label">Reliability</span>
             <h3>Backup and recovery workflows</h3>
             <p>
-              Automated backups, verification, offsite replication, restore-safe procedures, and operational documentation.
+              Automated backups, verification, offsite replication, restore-safe procedures, and documentation.
             </p>
           </article>
         </div>
@@ -136,8 +166,9 @@
             <li>Prometheus alerting and Grafana dashboards</li>
             <li>Loki + Promtail log pipeline</li>
             <li>Demo app for 5xx, latency, and alert-validation scenarios</li>
-            <li>Public-safe surfaces for demo, dashboards, and control-plane visibility</li>
-            <li>Operational runbooks for host, app, backup, and demo alerts</li>
+            <li>Public-safe demo, dashboard gallery, and control-plane visibility surfaces</li>
+            <li>Mac Host Audit dashboard for memory, swap, battery, Time Machine, brew, and agent state</li>
+            <li>Operational runbooks for host, app, backup, audit, and demo alerts</li>
             <li>CI validation for monitoring configs and rules</li>
           </ul>
 
@@ -146,6 +177,7 @@
           <div class="links">
             <a href="https://github.com/Elyablack/monitoring-stack">GitHub</a>
             <a href="https://demo.142.93.143.228.nip.io/">Live Demo</a>
+            <a href="https://demo.142.93.143.228.nip.io/dashboards">Dashboard Gallery</a>
           </div>
         </article>
 
@@ -153,30 +185,67 @@
           <div class="project-top">
             <div>
               <h3>Control Plane</h3>
-              <p class="project-subtitle">Alert-driven orchestration engine for decisions, tasks, runs, and remediation</p>
+              <p class="project-subtitle">Alert-driven orchestration engine for decisions, tasks, runs, audits, and remediation</p>
             </div>
             <span class="status-chip">Active</span>
           </div>
 
           <p>
-            Event-driven control plane that receives alerts, evaluates policy, creates decisions,
-            queues tasks, executes actions and chains, and tracks operational outcomes through a read-only pipeline API.
+            Event-driven control plane that receives alerts and scheduled signals, evaluates policy,
+            creates decisions, queues tasks, executes actions and chains, and tracks operational outcomes
+            through a read-only pipeline API.
           </p>
 
           <ul class="project-list">
             <li>Alert ingestion from Alertmanager</li>
+            <li>Internal scheduler for recurring operational workflows</li>
             <li>Rule-based decisions: ignore, execute, chain, cooldown</li>
             <li>Queued task model with worker execution</li>
             <li>SQLite-backed state for decisions, tasks, runs, locks, and cooldowns</li>
+            <li>Admin host, VPS host, monitoring stack, and Mac host audit domains</li>
+            <li>AI ops briefs for meaningful warning or critical audit results</li>
+            <li>AI weekly ops review over accumulated operational state</li>
             <li>Backup orchestration flow for stale or missing backups</li>
-            <li>Remote mac remediation workflow with dedicated worker agent</li>
+            <li>Remote Mac remediation workflow with dedicated worker agent</li>
           </ul>
 
-          <p><strong>Tech:</strong> Python, FastAPI, SQLite, Prometheus, Alertmanager, Ansible, macOS, Telegram</p>
+          <p><strong>Tech:</strong> Python, FastAPI, SQLite, Prometheus, Alertmanager, Ansible, macOS, Telegram, OpenAI API</p>
 
           <div class="links">
             <a href="https://github.com/Elyablack/control-plane">GitHub</a>
             <a href="https://demo.142.93.143.228.nip.io/control-plane">Live View</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <div>
+              <h3>Mac Host Audit and Memory Guard</h3>
+              <p class="project-subtitle">Agent-published Mac audit snapshots and guarded remediation workflow</p>
+            </div>
+            <span class="status-chip">Active</span>
+          </div>
+
+          <p>
+            Lightweight Mac host audit domain built on top of an existing local agent.
+            The Mac publishes snapshots to the control-plane, where they are verified, analyzed,
+            exported as Prometheus textfile metrics, included in dashboards, and summarized in weekly reviews.
+          </p>
+
+          <ul class="project-list">
+            <li>Agent-published JSON snapshots instead of SSH-based collection</li>
+            <li>Memory free percent, swap usage, disk usage, battery, power source, and uptime checks</li>
+            <li>Time Machine latest backup age and Homebrew outdated package metrics</li>
+            <li>Launchd loaded/running state for Mac memory guard jobs</li>
+            <li>Prometheus textfile metrics for Grafana dashboard panels</li>
+            <li>Warning/critical audit results can generate AI briefs and Telegram notifications</li>
+          </ul>
+
+          <p><strong>Tech:</strong> Python, macOS launchd, Prometheus textfile collector, FastAPI, Telegram</p>
+
+          <div class="links">
+            <a href="https://demo.142.93.143.228.nip.io/dashboards">Dashboard Gallery</a>
+            <a href="https://demo.142.93.143.228.nip.io/control-plane">Control Plane UI</a>
           </div>
         </article>
 
@@ -227,6 +296,10 @@
           <span>Bash</span>
           <span>GitHub Actions</span>
           <span>CI/CD</span>
+          <span>macOS launchd</span>
+          <span>node_exporter</span>
+          <span>Textfile Collector</span>
+          <span>OpenAI API</span>
           <span>Backup & Recovery</span>
           <span>Runbooks</span>
           <span>Operational Automation</span>
@@ -250,7 +323,8 @@
         <div class="contact-card">
           <p><strong>GitHub:</strong> <a href="https://github.com/Elyablack">github.com/Elyablack</a></p>
           <p><strong>Live Demo:</strong> <a href="https://demo.142.93.143.228.nip.io/">demo.142.93.143.228.nip.io</a></p>
-          <p><strong>Focus:</strong> observability, control planes, infrastructure automation, backup and recovery</p>
+          <p><strong>Dashboard Gallery:</strong> <a href="https://demo.142.93.143.228.nip.io/dashboards">demo.142.93.143.228.nip.io/dashboards</a></p>
+          <p><strong>Focus:</strong> observability, control planes, audit automation, infrastructure automation, backup and recovery</p>
         </div>
       </div>
     </section>
